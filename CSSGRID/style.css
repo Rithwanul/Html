@@ -1,17 +1,20 @@
 html,
 body {
   background-color: #ffeead;
-  margin: 10px;
+  /* margin: 10px; */
   height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .container {
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 40px 200px;
-  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 2fr 100px;
+  grid-row-gap: 3px;
+  grid-column-gap: 3px;
+  /* padding: 10px; */
 }
 
 .container > div {
@@ -20,6 +23,8 @@ body {
   justify-content: center;
   font-size: 2rem;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container > div:nth-child(1n) {
@@ -56,4 +61,8 @@ body {
 
 .content {
   grid-column: 2 / -1;
+}
+
+.menu {
+  grid-row: 2 / 3;
 }
